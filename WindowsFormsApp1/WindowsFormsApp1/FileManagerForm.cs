@@ -1,28 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
 
-    public class FileManager
+    public partial class FileManager
     {
-        private string currentDirectory =
-        Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        private string currentDirectory = ".\\";
         private ListView listView;
         public FileManager(ListView listView)
         {
             this.listView = listView;
             LoadFilesAndFolders();
         }
+
+        public FileManager()
+        {
+        }
+
         private void LoadFilesAndFolders()
         {
             listView.Items.Clear();
