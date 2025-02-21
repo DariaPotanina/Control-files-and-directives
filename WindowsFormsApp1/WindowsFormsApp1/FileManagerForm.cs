@@ -208,14 +208,14 @@ namespace WindowsFormsApp1
             {
                 Location = new System.Drawing.Point(340, 420),
                 Text = "Сортировать по дате",
-                Size = new System.Drawing.Size(120, 25)
+                Size = new System.Drawing.Size(150, 25)
             };
             sortByDateButton.Click += SortByDateButton_Click;
             sortByNameButton = new Button
             {
-                Location = new System.Drawing.Point(470, 420),
+                Location = new System.Drawing.Point(510, 420),
                 Text = "Сортировать по имени",
-                Size = new System.Drawing.Size(120, 25)
+                Size = new System.Drawing.Size(150, 25)
             };
             sortByNameButton.Click += SortByNameButton_Click;
             this.Controls.Add(listView);
